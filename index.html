@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <img src="logo.jpg" alt="Company Logo" id="logo">
+        <p>Embrace the rapid pace of innovation with our services, where we transform your business operations through intelligent automation.</p>
+        <p>Leveraging the latest in AI technology, we help ensure that you do not lag behind or get outpaced by competitors</p>
+        <h2>Call Cost Calculator </h2> 
+       
+
+        <label for="dailyCalls">Calls per Day:</label>
+        <input type="number" id="dailyCalls" placeholder="Enter daily calls" required>
+
+        <label for="hourlyCalls">Calls per Hour:</label>
+        <input type="number" id="hourlyCalls" placeholder="Enter hourly calls" required>
+
+        <label for="concurrency">Concurrency:</label>
+        <input type="number" id="concurrency" placeholder="Enter concurrency" required>
+
+        <label for="avgDuration">Average Duration (minutes):</label>
+        <input type="number" id="avgDuration" placeholder="Enter average call duration" required>
+
+        <button onclick="calculateCost()">Calculate</button>
+
+        <div id="result" class="result"></div>
+        <button onclick="toggleTheme()" id="themeToggle">Switch to Dark Theme</button> 
+        Developed by <a href="https://linktr.ee/IntegrAI_Ltd" target="_blank">IntegrAI Ltd</a></h2>
+    </div>
+
+    <script>
+        function calculateCost() {
+            const dailyCalls = parseInt(document.getElementById('dailyCalls').value);
+            const hourlyCalls = parseInt(document.getElementById('hourlyCalls').value);
+            const concurrency = parseInt(document.getElementById('concurrency').value);
+            const avgDuration = parseFloat(document.getElementById('avgDuration').value);
+
+            const callsPerMonth = dailyCalls * 30;
+            const totalMinutes = callsPerMonth * avgDuration;
+            let package = 'Basic';
+            let monthlyFee = 0;
+
+            if (dailyCalls > 500 || hourlyCalls > 100 || concurrency > 10) {
+                package = 'Build';
+                monthlyFee = 299;
+            }
+            if (dailyCalls > 2000 || hourlyCalls > 400 || concurrency > 50) {
+                package = 'Scale';
+                monthlyFee = 499;
+            }
+
+            const callCost = totalMinutes * 0.09;
+            const totalCost = monthlyFee + callCost;
+
+            document.getElementById('result').innerHTML = `
+                <strong>Results:</strong><br>
+                Total Calls per Month: ${callsPerMonth}<br>
+                Total Minutes: ${totalMinutes.toFixed(2)}<br>
+                Selected Package: ${package}<br>
+                Monthly Cost: $${totalCost.toFixed(2)}
+            `;
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.getElementById('themeToggle');
+            body.classList.toggle('dark-theme');
+            themeToggle.innerText = body.classList.contains('dark-theme') ? 'Switch to Light Theme' : 'Switch to Dark Theme';
+        }
+    </script>
+</body>
+</html>
