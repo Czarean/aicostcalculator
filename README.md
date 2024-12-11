@@ -1,12 +1,10 @@
-##BLAND.AI CALL COST CALCULATOR
-
-Hey Gs,
+##BLAND CALL COST CALCULATOR
 
 You're welcome to use or modify this calculator as you please! Alternatively, feel free to use this version if you prefer.
 
-About: This calculator will allow you to calculate to the penny how much it will cost to onboard a client onto BLAND.AI based on the number of calls per month, date, or concurrency.
-The cost per minute has been hardcoded at Bland's default rate of $0.09.
-The packages are also hardcoded, and the calculator will automatically include the price of the package you need to purchase from Bland.
+About: This calculator will allow you to calculate to the penny how much it will cost you to onboard a client onto BLAND.AI based on the number of calls per month, date, or concurrency.
+
+IMPORTANT: The BLAND.AI packages are also hardcoded, and the calculator will automatically include the price of the package you need to purchase from Bland, and tell you the package that you should purchase! (I´m currently working to add the packages dynamically so you can modify the packages to fit any other vendor specific packages :D)
 
 These are the packages used on this code: 
 

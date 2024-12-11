@@ -45,6 +45,10 @@ body {
     font-size: 14px;
 }
 
+.calculator .price-input {
+    text-align: right;
+}
+
 .calculator button {
     background-color: #007bff;
     color: white;
