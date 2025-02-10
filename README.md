@@ -94,6 +94,9 @@ Note: If you want you can just copy paste the code of either the calculator.html
 (IF YOU SPOT ANY ERROR OR MISCALCULATION LMK AND I WILL FIX IT)
 Also if you need help makeing any modification, I will be more than happy to help you with it.
 
+### Show me some love by liking and sub to my socials :D 
+- [My LinkedIn](https://www.linkedin.com/in/cesar-anaya/)
+
 
 
 
