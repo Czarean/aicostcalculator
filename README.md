@@ -96,15 +96,4 @@ Also if you need help makeing any modification, I will be more than happy to hel
 
 
 
-### Show me some love by liking and sub to my socials :D 
-- [My AAA Linktree](https://linktr.ee/IntegrAI_Ltd)
-- [X](https://x.com/IC_Pirate)
-- [AAA IG](https://www.instagram.com/integrai.ltd/)
-- [Youtube](https://www.youtube.com/@IntegrAI-Ltd)
-- [My LinkedIn](https://www.linkedin.com/in/cesar-anaya/)
-- [AAA LinkedIn](https://www.linkedin.com/company/105811080/admin/dashboard/)
 
-### If you'd like to show your appreciation, you can buy me a coffee with crypto here:
-- Bitcoin: 33EqT1Uh1CrpNiUy9CKRnh91r4rFzu3NAx
-- Ethereum: 0x40218185f87153E98C35aa358766B23b51715d94
-- ICP: 1d089c6a6908f344a4c3dd7689253b58065bd14cd2257fc318285e8b24da7a04
